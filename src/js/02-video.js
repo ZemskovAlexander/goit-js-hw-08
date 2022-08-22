@@ -16,3 +16,5 @@ function onTimeWatch(savedTime) {
   }
   else parsedTime = 0;
 }
+
+// setCurrentTime(parsedTime.seconds)
