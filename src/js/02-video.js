@@ -17,4 +17,4 @@ function onTimeWatch(savedTime) {
   else parsedTime = 0;
 }
 
-// setCurrentTime(parsedTime.seconds)
+ const currentTime = setCurrentTime(parsedTime.seconds)
