@@ -16,9 +16,10 @@ function onTimeWatch() {
   if (savedTime) {
     parsedTime = JSON.parse(savedTime);
   }
-  else savedTime = setCurrentTime(time.seconds);
+  else savedTime = 0;
 }
 
-//  setCurrentTime(parsedTime.seconds)
-//  console(setCurrentTime(parsedTime.seconds))
-console.log(savedTime)
+player.setCurrentTime(parsedTime.seconds)
+
+
+// Добрый вечер. Подскажие как правильно вписать setCurrentTime(parsedTime.seconds) ? Осталось перелать время в из localStorage в плеер. Спасибо.
