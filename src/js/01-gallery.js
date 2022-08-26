@@ -25,16 +25,6 @@ const addGallaryMarkup = createGalleryCardsMarkup(galleryItems);
 
 galleryContainer.innerHTML = addGallaryMarkup;
 
-galleryContainer.addEventListener('click', onImageClick);
-
-function onImageClick(evt) {
-  blockStandartAction(evt);
-
-  if (evt.target.nodeName !== 'IMG') {
-    return;
-  }
-}
-
 let gallery = new SimpleLightbox('.gallery a');
-gallery.on('show.simplelightbox', function () {});
-gallery.on('captionDelay', function () {});
+gallery.on('show.simplelightbox', 'captionDelay', function () {});
+// gallery.on('captionDelay', function () {});
