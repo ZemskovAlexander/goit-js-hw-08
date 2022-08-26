@@ -10,10 +10,10 @@ const refs = {
 
 
 // Не понял как корректно кинуть слушателя на form и отлавливать события с submit и input
-// и их аргументами onFormSubmit и функцию throttle(onTextareaInput, 200)
+// и их аргументами onFormSubmit и функцию throttle(onTextareaInput, 500)
 
 refs.form.addEventListener('submit', onFormSubmit);
-refs.textarea.addEventListener('input', throttle(onTextareaInput, 200));
+refs.textarea.addEventListener('input', throttle(onTextareaInput, 500));
 
 
 // Видео саши пересмотрел, но не понял как адаптировать кусочек кода, возникает ошибка.
