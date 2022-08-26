@@ -19,7 +19,7 @@ function onTimeWatch() {
   else savedTime = 0;
 }
 
-player.setCurrentTime(parsedTime.seconds)
+player.setCurrentTime(parsedTime)
 
 
 // Добрый вечер. Подскажие как правильно вписать setCurrentTime(parsedTime.seconds) ? Осталось перелать время в из localStorage в плеер. Спасибо.
